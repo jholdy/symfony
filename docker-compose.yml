@@ -1,0 +1,33 @@
+version: '3'
+
+volumes:
+  data:
+    driver: local
+
+services:
+
+  mysql:
+    image: mysql:5.7
+    container_name: ${DATABASE_HOST}
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - ${DOCKER_HOST_MYSQL}:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_DATABASE=${DATABASE_DATABASE}
+      - MYSQL_USER=${DATABASE_USER}
+      - MYSQL_PASSWORD=${DATABASE_PASSWORD}
+
+  app:
+    image: ambientum/php:7.2-nginx
+    container_name: symfony-app
+    volumes:
+      - .:/var/www/app
+    ports:
+      - ${DOCKER_HOST_APP}:8080
+    environment:
+      - APP_ENV=production
+      - XDEBUG_ENABLED=true
+    links:
+      - mysql
