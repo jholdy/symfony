@@ -1,0 +1,30 @@
+[1] Log opened at 2019-05-07 21:48:27
+[1] I: Checking remote connect back address.
+[1] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[1] I: Checking header 'REMOTE_ADDR'.
+[1] W: Remote address not found, connecting to configured address/port: localhost:9000. :-|
+[1] W: Creating socket for 'localhost:9000', poll success, but error: Operation now in progress (29).
+[1] W: Creating socket for 'localhost:9000', connect: Cannot assign requested address.
+[1] E: Could not connect to client. :-(
+[1] Log closed at 2019-05-07 21:48:27
+[1]
+[12] Log opened at 2019-05-07 21:48:27
+[12] I: Checking remote connect back address.
+[12] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[12] I: Checking header 'REMOTE_ADDR'.
+[12] W: Remote address not found, connecting to configured address/port: localhost:9000. :-|
+[12] W: Creating socket for 'localhost:9000', poll success, but error: Operation now in progress (29).
+[12] W: Creating socket for 'localhost:9000', connect: Cannot assign requested address.
+[12] E: Could not connect to client. :-(
+[12] Log closed at 2019-05-07 21:48:27
+[12]
+[20] Log opened at 2019-05-07 21:48:28
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] W: Remote address not found, connecting to configured address/port: localhost:9000. :-|
+[20] W: Creating socket for 'localhost:9000', poll success, but error: Operation now in progress (29).
+[20] W: Creating socket for 'localhost:9000', connect: Cannot assign requested address.
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-05-07 21:48:28
+[20]

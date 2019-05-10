@@ -16,6 +16,7 @@ class DefaultController extends AbstractController
    */
   public function index()
   {
+    $a = 'sdasdad';
     return phpinfo();
   }
 }
