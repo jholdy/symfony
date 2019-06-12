@@ -19,4 +19,13 @@ class DefaultController extends AbstractController
     $a = 'sdasdad';
     return phpinfo();
   }
+
+  /**
+   * @Route("/teste", name="default_teste")
+   */
+  public function teste()
+  {
+    $a = 'sdasdad';
+    return $a;
+  }
 }
